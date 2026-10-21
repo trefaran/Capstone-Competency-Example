@@ -11,4 +11,4 @@ def bubble_sort(arr):
     return arr
 
 sorted_list = bubble_sort(random_list)
-print(sorted_list)
+print(sorted_list + " is the sorted list.")
