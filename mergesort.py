@@ -1,11 +1,3 @@
-import random
-import time
-
-start = time.perf_counter()
-random_list = [28, 22, 15, 55, 75, 37, 33, 44, 99, 90]
-#random_list = [random.randint(1, 100) for i in range(10)]
-print(random_list)
-
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -27,6 +19,3 @@ def merge(left, right):
     result.extend(left[i:])
     result.extend(right[j:])
     return result
-
-sorted_list = merge_sort(random_list)
-print(str(sorted_list) + " is the sorted list. (merge sort) Time taken: " + str((time.perf_counter() - start) * 1000) + " milliseconds.")
