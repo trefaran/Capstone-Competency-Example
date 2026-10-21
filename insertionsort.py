@@ -13,4 +13,4 @@ def insertion_sort(arr):
     return arr
 
 sorted_list = insertion_sort(random_list)
-print(sorted_list + " is the sorted list.")
+print(str(sorted_list) + " is the sorted list. (insertion sort)")
